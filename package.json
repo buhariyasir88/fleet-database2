@@ -1,0 +1,15 @@
+{
+  "name": "fleet-database",
+  "version": "1.0.0",
+  "description": "DJ Group Chartering Database - Fleet Management System",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

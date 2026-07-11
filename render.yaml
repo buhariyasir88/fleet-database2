@@ -1,0 +1,26 @@
+services:
+  # Backend API
+  - type: web
+    name: fleet-database-backend
+    runtime: node
+    repo: https://github.com/YOUR_USERNAME/fleet-database
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+    envVars:
+      - key: PORT
+        value: 5001
+      - key: MONGO_URI
+        sync: false
+    plan: free
+    healthCheckPath: /api/test
+
+  # Frontend React App
+  - type: web
+    name: fleet-database-frontend
+    runtime: static
+    repo: https://github.com/YOUR_USERNAME/fleet-database
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://fleet-database-backend.onrender.com/api
