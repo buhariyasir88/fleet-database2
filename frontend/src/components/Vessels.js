@@ -41,7 +41,7 @@ import {
   Save as SaveIcon,
 } from '@mui/icons-material';
 
-const API_URL = 'http://https://fleet-database-backend.onrender.com/api';
+const API_URL = 'https://fleet-database-backend.onrender.com/api';
 
 function Vessels() {
   const [vessels, setVessels] = useState([]);
@@ -203,7 +203,7 @@ function Vessels() {
   };
 
   const handleDownload = (doc) => {
-    window.open(`http://localhost:5000/${doc.filePath}`, '_blank');
+    window.open(`http://localhost:5005/${doc.filePath}`, '_blank');
   };
 
   if (loading) {

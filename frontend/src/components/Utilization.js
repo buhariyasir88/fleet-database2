@@ -64,7 +64,7 @@ ChartJS.register(
   Legend
 );
 
-const API_URL = 'http://https://fleet-database-backend.onrender.com/api';
+const API_URL = 'https://fleet-database-backend.onrender.com/api';
 
 function Utilization() {
   const [utilizations, setUtilizations] = useState([]);
