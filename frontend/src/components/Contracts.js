@@ -40,7 +40,7 @@ import {
   CheckCircle as CheckCircleIcon,
 } from '@mui/icons-material';
 
-const API_URL = 'http://lhttps://fleet-database-backend.onrender.com/api';
+const API_URL = 'http://https://fleet-database-backend.onrender.com/api';
 
 function Contracts() {
   const [contracts, setContracts] = useState([]);

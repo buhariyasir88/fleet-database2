@@ -41,7 +41,7 @@ import {
   Save as SaveIcon,
 } from '@mui/icons-material';
 
-const API_URL = 'http://lhttps://fleet-database-backend.onrender.com/api';
+const API_URL = 'http://https://fleet-database-backend.onrender.com/api';
 
 function Vessels() {
   const [vessels, setVessels] = useState([]);
