@@ -14,10 +14,9 @@ services:
     healthCheckPath: /api/dashboard
     autoDeploy: true
 
-  # Frontend Static Site
-  - type: web
+  # Frontend Static Site - FIXED
+  - type: static
     name: fleet-frontend
-    runtime: static
     plan: free
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: ./frontend/build
